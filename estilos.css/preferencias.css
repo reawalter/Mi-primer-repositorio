@@ -1,0 +1,65 @@
+body {
+    background-color: #4d5e58;
+}
+
+/* Seccion 1 */
+.tabladebotas {
+  width: 95%;
+  max-width: 950px;
+  margin: 40px auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #000000;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Encabezado: primera fila SIEMPRE con fondo verde */
+.tabladebotas thead tr th {
+  background: linear-gradient(135deg, #4d5e58, #6f8d83);
+  color: #ffffff;
+  padding: 18px;
+  font-size: 1.1em;
+  text-align: left;
+  border-bottom: 2px solid #4d5e58;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+}
+
+/* Celdas del cuerpo */
+.tabladebotas tbody td {
+  padding: 16px;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #2d3835;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+/* Hover en filas normales */
+.tabladebotas tbody tr:hover td {
+  background-color: #2b3935;
+  color: #ffffff;
+  transform: scale(1.005);
+}
+
+/* Bordes redondeados en el encabezado */
+.tabladebotas thead tr th:first-child {
+  border-top-left-radius: 16px;
+}
+.tabladebotas thead tr th:last-child {
+  border-top-right-radius: 16px;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .tabladebotas {
+    font-size: 14px;
+  }
+  .tabladebotas th, .tabladebotas td {
+    padding: 12px;
+  }
+}

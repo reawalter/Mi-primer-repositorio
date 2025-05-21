@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botas/Contactos</title>
+    <link rel="shortcut icon" href="../estaticos/cat.png" type="image/png">
+    <link rel="stylesheet" href="../estilos.css/contactos.css">
+
+    <style>
+        body {
+            /* Solo cambia la fuente y el color de texto general */
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Formulario de contacto para contactar a Botas</h2>
+        <form action="node.js" method="get">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required><br>
+
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" required><br>
+
+            <label for="email">Correo electronico</label>
+            <input type="email" name="email" id="email" required><br>
+
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" required><br>
+
+            <label for="fecha">Fecha de envio de mensaje</label>
+            <input type="date" name="fecha" id="fecha" required><br>
+
+            <label for="colorfavorito">Elija su color favorito</label>
+            <input type="color"><br>
+
+            <label>Estación favorita</label>
+            <div class="radios">
+                <div class="radio-option">
+                    <input type="radio" name="estacionfavorita" id="invierno" value="invierno" required>
+                    <label for="invierno">Invierno</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" name="estacionfavorita" id="primavera" value="primavera">
+                    <label for="primavera">Primavera</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" name="estacionfavorita" id="verano" value="verano">
+                    <label for="verano">Verano</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" name="estacionfavorita" id="otoño" value="otoño">
+                    <label for="otoño">Otoño</label>
+                </div>
+            </div>
+
+            <label for="mensaje">Comentario</label><br>
+            <textarea name="mensaje" id="mensaje" placeholder="Escriba su mensaje aquí..." cols="40" rows="9"
+                required></textarea><br>
+
+            <input type="submit" name="Enviar">
+    </div>
+
+
+    </form>
+</body>
+
+</html>

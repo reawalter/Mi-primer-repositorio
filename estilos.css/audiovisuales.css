@@ -1,0 +1,56 @@
+body {
+    background-color: #4d5e58;
+}
+
+/* Seccion 1 */
+/* Contenedor principal */
+.seccion-uno {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Título principal */
+.seccion-uno > h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+/* Contenedor horizontal de los videos */
+.contenedor-videos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Si la pantalla es pequeña, se apilan */
+  gap: 30px;
+}
+
+/* Cada bloque de video */
+.contenedor-videos section {
+  flex: 0 1 auto;
+  width: 500px;
+  text-align: center;
+}
+
+/* Subtítulo */
+.contenedor-videos section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #a8c3ba; /* Combina con fondo #4d5e58 */
+}
+
+/* Video responsivo con tamaño base */
+.contenedor-videos iframe {
+  width: 100%;
+  aspect-ratio: 5 / 3; /* 500x300 */
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+/* Efecto flotante */
+.contenedor-videos iframe:hover {
+  transform: scale(1.03);
+}

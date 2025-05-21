@@ -1,0 +1,99 @@
+body{
+    background-color: #4d5e58;
+}
+
+/* Seccion 1 */
+.encabezado {
+  background-color: #c7d6d564;
+  padding: 10px 20px;
+  border-radius: 25px;
+  display: inline-block; /* Fondo solo ocupa lo necesario */
+  margin: 10px auto;
+}
+
+/* Estilo del menú */
+.seccion-uno {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilo de los botones (enlaces) */
+.seccion-uno li a {
+  text-decoration: none;
+  color: black;
+  background-color: transparent; /* Quita fondo blanco */
+  padding: 10px 15px; /* Más espacio vertical y horizontal */
+  border-radius: 15px;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efecto hover (opcional) */
+.seccion-uno li a:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Un fondo suave al pasar el mouse */
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .seccion-uno {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+/* Seccion 2 */
+.seccion-dos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.seccion-dos img {
+  order: 2; 
+}
+
+.seccion-dos p {
+  order: 1; 
+}
+
+/* Seccion 3 */
+.seccion-tres {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.seccion-tres img {
+  order: 1; 
+}
+
+.seccion-tres p {
+  order: 2;
+}
+
+/* Secccion 4 */
+.seccion-cuatro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.seccion-cuatro img {
+  order: 2; 
+}
+
+.seccion-cuatro p {
+  order: 1; 
+}
+
+
